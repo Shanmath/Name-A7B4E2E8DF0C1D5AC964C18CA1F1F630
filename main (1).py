@@ -1,9 +1,8 @@
-#python
-# Get the year from the user
-year = int(input("Enter a year: "))
-
-# Check if it's a leap year
-if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print(f"{year} is a leap year.")
-else:
-    print(f"{year} is not a leap year.")
+'''Write a function called linear_search_product that takes the list of products and a target product name as input. The function should perform a linear search to find the target product in the list and return a list of indices of all occurrences of the product if found, or an empty list if the product is not found.'''
+# ppython
+def linear_search_product(product_list, target_product):
+    indices = []
+    for i, product in enumerate(product_list):
+        if product == target_product:
+            indices.append(i)
+    return indices
